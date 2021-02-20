@@ -8,7 +8,9 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    // UserDefaultsの参照
+    let userDefaults = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -19,13 +21,10 @@ class SecondViewController: UIViewController {
         userDefaults.set("on", forKey: "winSwitch")
         userDefaults.synchronize()
         
-        winLabel.isHidden = true
-        
     }else {
         userDefaults.set("off", forKey: "winSwitch")
         userDefaults.synchronize()
-        
-        winLabel.isHidden = false
+        self.performSegue(withIdentifier: "toMain", sender: self)
     }
     }
 

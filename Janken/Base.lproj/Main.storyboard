@@ -169,7 +169,7 @@
                         <outlet property="resultLabel" destination="VoD-iO-urR" id="VAR-gk-Oj7"/>
                         <outlet property="slider" destination="H9X-Q9-uaY" id="Mb1-LM-mPg"/>
                         <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="aZe-8n-sk4"/>
-                        <segue destination="Cgx-lx-uxu" kind="show" identifier="toSecond" animates="NO" id="SXH-q9-8gk"/>
+                        <segue destination="Cgx-lx-uxu" kind="presentation" identifier="toSecond" modalPresentationStyle="currentContext" id="SXH-q9-8gk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,11 +181,32 @@
             <objects>
                 <viewController id="Cgx-lx-uxu" customClass="SecondViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxF-ks-3Vs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hem-1G-fTl">
+                                <rect key="frame" x="5" y="61" width="315" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="負けた回数を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-29-aCS">
+                                        <rect key="frame" x="0.0" y="0.0" width="266" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-VO-EpY">
+                                        <rect key="frame" x="266" y="0.0" width="51" height="31"/>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foJ-BR-Xef">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <state key="normal" title="保存して終了">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikH-6o-jpb">
-                                <rect key="frame" x="5" y="8" width="315" height="31"/>
+                                <rect key="frame" x="5" y="30" width="315" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="勝った回数を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DhD-ae-1EN">
                                         <rect key="frame" x="0.0" y="0.0" width="266" height="31"/>
@@ -201,37 +222,29 @@
                                     </switch>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hem-1G-fTl">
-                                <rect key="frame" x="5" y="39" width="315" height="31"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="負けた回数を表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f0k-29-aCS">
-                                        <rect key="frame" x="0.0" y="0.0" width="266" height="31"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-VO-EpY">
-                                        <rect key="frame" x="266" y="0.0" width="51" height="31"/>
-                                    </switch>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Wzg-bs-Bne"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ikH-6o-jpb" firstAttribute="leading" secondItem="Wzg-bs-Bne" secondAttribute="leading" constant="5" id="FAL-cX-XPQ"/>
-                            <constraint firstItem="Wzg-bs-Bne" firstAttribute="trailing" secondItem="ikH-6o-jpb" secondAttribute="trailing" id="LdC-1a-k3n"/>
-                            <constraint firstItem="ikH-6o-jpb" firstAttribute="top" secondItem="Wzg-bs-Bne" secondAttribute="top" constant="8" id="Npe-0c-jN9"/>
-                            <constraint firstItem="hem-1G-fTl" firstAttribute="top" secondItem="ikH-6o-jpb" secondAttribute="bottom" id="Tpa-fe-oYd"/>
-                            <constraint firstItem="Wzg-bs-Bne" firstAttribute="trailing" secondItem="hem-1G-fTl" secondAttribute="trailing" id="aOa-3U-KTs"/>
-                            <constraint firstItem="hem-1G-fTl" firstAttribute="leading" secondItem="Wzg-bs-Bne" secondAttribute="leading" constant="5" id="skq-Lg-NPc"/>
+                            <constraint firstItem="hem-1G-fTl" firstAttribute="leading" secondItem="Wzg-bs-Bne" secondAttribute="leading" constant="5" id="DBh-Ea-YYW"/>
+                            <constraint firstItem="foJ-BR-Xef" firstAttribute="top" secondItem="Wzg-bs-Bne" secondAttribute="top" id="K1u-SX-Vma"/>
+                            <constraint firstItem="hem-1G-fTl" firstAttribute="top" secondItem="ikH-6o-jpb" secondAttribute="bottom" id="aKO-t1-ssA"/>
+                            <constraint firstItem="ikH-6o-jpb" firstAttribute="top" secondItem="foJ-BR-Xef" secondAttribute="bottom" id="cX0-ci-Z7T"/>
+                            <constraint firstItem="ikH-6o-jpb" firstAttribute="leading" secondItem="Wzg-bs-Bne" secondAttribute="leading" constant="5" id="gvL-7P-bD0"/>
+                            <constraint firstItem="foJ-BR-Xef" firstAttribute="trailing" secondItem="Wzg-bs-Bne" secondAttribute="trailing" id="n9P-xu-UP3"/>
+                            <constraint firstItem="Wzg-bs-Bne" firstAttribute="trailing" secondItem="ikH-6o-jpb" secondAttribute="trailing" id="pxF-3X-cUL"/>
+                            <constraint firstItem="Wzg-bs-Bne" firstAttribute="trailing" secondItem="hem-1G-fTl" secondAttribute="trailing" id="qU1-zf-dwG"/>
+                            <constraint firstItem="foJ-BR-Xef" firstAttribute="leading" secondItem="Wzg-bs-Bne" secondAttribute="leading" id="ufe-r7-YKJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7uc-E4-fZh"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMain" modalPresentationStyle="currentContext" id="H5L-xO-i32"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdF-jY-QFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1174" y="77"/>
+            <point key="canvasLocation" x="1173.75" y="76.056338028169009"/>
         </scene>
     </scenes>
     <resources>
@@ -239,6 +252,9 @@
         <image name="janken_gu" width="416" height="416"/>
         <image name="janken_pa" width="474" height="436"/>
         <image name="setting" width="400" height="400"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
