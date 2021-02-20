@@ -195,6 +195,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LuP-VO-EpY">
                                         <rect key="frame" x="266" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="lostSwitch:" destination="Cgx-lx-uxu" eventType="valueChanged" id="Qlu-Da-la5"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
