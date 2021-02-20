@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var percentLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var enemyLabel: UILabel!
+    @IBOutlet weak var winLabel: UILabel!
+    @IBOutlet weak var lostLabel: UILabel!
+    
     
     var b = 0
 

@@ -135,8 +135,10 @@
                     </view>
                     <connections>
                         <outlet property="enemyLabel" destination="5xY-RH-8fa" id="DDi-nd-Iko"/>
+                        <outlet property="lostLabel" destination="eb2-Dx-3pe" id="G1m-Hx-ip2"/>
                         <outlet property="percentLabel" destination="AoE-7k-csQ" id="9Br-Rt-dcX"/>
                         <outlet property="resultLabel" destination="VoD-iO-urR" id="kLz-aC-Nch"/>
+                        <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="8uf-rY-xit"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
