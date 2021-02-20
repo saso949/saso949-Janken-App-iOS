@@ -39,6 +39,9 @@ class ViewController: UIViewController {
             resultLabel.text = "勝ち"
             enemyLabel.text = "チョキ"
             
+            winCount += 1
+            winLabel.text = "勝った回数" + String(winCount) + "回"
+            
         }else if a >= b {
             let c = 100 - b
             let d = c / 2
@@ -50,6 +53,9 @@ class ViewController: UIViewController {
             }else if e <= d{
                 resultLabel.text = "負け"
                 enemyLabel.text = "パー"
+                
+                lostCount += 1
+                lostLabel.text = "負けた回数" + String(lostCount) + "回"
             }
         }
     }
@@ -61,6 +67,9 @@ class ViewController: UIViewController {
             resultLabel.text = "勝ち"
             enemyLabel.text = "パー"
             
+            winCount += 1
+            winLabel.text = "勝った回数" + String(winCount) + "回"
+            
         }else if a >= b {
             let c = 100 - b
             let d = c / 2
@@ -71,6 +80,9 @@ class ViewController: UIViewController {
             } else if e <= d {
                 resultLabel.text = "負け"
                 enemyLabel.text = "グー"
+                
+                lostCount += 1
+                lostLabel.text = "負けた回数" + String(lostCount) + "回"
             }
         }
         
@@ -82,6 +94,10 @@ class ViewController: UIViewController {
             resultLabel.text = "勝ち"
             enemyLabel.text = "グー"
             
+            
+            winCount += 1
+            winLabel.text = "勝った回数" + String(winCount) + "回"
+            
         }else if a >= b {
             let c = 100 - b
             let d = c / 2
@@ -92,6 +108,9 @@ class ViewController: UIViewController {
             } else if e <= d {
                 resultLabel.text = "負け"
                 enemyLabel.text = "チョキ"
+                
+                lostCount += 1
+                lostLabel.text = "負けた回数" + String(lostCount) + "回"
             }
         }
     }
