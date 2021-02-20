@@ -18,11 +18,24 @@ class SecondViewController: UIViewController {
             count1 = winSwitch
         }
         
+        if let lostSwitch = userDefaults.string(forKey: "lostSwitch"){
+            count2 = lostSwitch
+        }
+        
         if count1 == "on"{
             winSwitch.isOn = true
         }else if count1 == "off"{
             winSwitch.isOn = false
         }
+        
+        if count2 == "on"{
+            lostSwitch.isOn = true
+        }else if count2 == "off"{
+            lostSwitch.isOn = false
+        }
+        
+        
+        
 
         // Do any additional setup after loading the view.
     }
