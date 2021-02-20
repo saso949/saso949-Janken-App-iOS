@@ -28,8 +28,12 @@ class SecondViewController: UIViewController {
     }
     
     
-    @IBAction func lostSwitch(_ sender: Any) {
-        
+    @IBAction func lostSwitch(_ sender: UISwitch) {
+        if sender.isOn{
+            userDefaults.set("on", forKey: "lostSwitch")
+        }else{
+            userDefaults.set("off",forKey: "lostSwitch")
+        }
     }
     
     
