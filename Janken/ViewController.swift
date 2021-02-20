@@ -79,7 +79,7 @@ class ViewController: UIViewController {
     var count1 = "off"
     var count2 = "off"
     
-
+    
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
         percentLabel.text = String(sliderValue) + "%"
@@ -121,7 +121,7 @@ class ViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func chokiButton(_ sender: Any) {
         let a = Int.random(in: 0 ... 100)
         if a <= b{
@@ -148,7 +148,7 @@ class ViewController: UIViewController {
                 lostLabel.text = "負けた回数" + String(lostCount) + "回"
                 userDefaults.set(lostCount, forKey: "lost")
                 userDefaults.synchronize()
-
+                
             }
         }
         
@@ -181,7 +181,7 @@ class ViewController: UIViewController {
                 lostLabel.text = "負けた回数" + String(lostCount) + "回"
                 userDefaults.set(lostCount, forKey: "lost")
                 userDefaults.synchronize()
-
+                
             }
         }
     }

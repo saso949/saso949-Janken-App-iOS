@@ -36,7 +36,7 @@ class SecondViewController: UIViewController {
         
         
         
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -50,15 +50,15 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func winSwitch(_ sender: UISwitch) {
-    if sender.isOn{
-        userDefaults.set("on", forKey: "winSwitch")
-        userDefaults.synchronize()
-        
-    }else {
-        userDefaults.set("off", forKey: "winSwitch")
-        userDefaults.synchronize()
-        
-    }
+        if sender.isOn{
+            userDefaults.set("on", forKey: "winSwitch")
+            userDefaults.synchronize()
+            
+        }else {
+            userDefaults.set("off", forKey: "winSwitch")
+            userDefaults.synchronize()
+            
+        }
     }
     
     
@@ -77,6 +77,6 @@ class SecondViewController: UIViewController {
         self.performSegue(withIdentifier: "toMain", sender: self)
     }
     
-
-
+    
+    
 }
