@@ -86,14 +86,30 @@
                                     <action selector="chokiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7n8-OA-8x4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="勝った回数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Yk-Yv-vFZ">
+                                <rect key="frame" x="16" y="487" width="92" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="負けた回数" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb2-Dx-3pe">
+                                <rect key="frame" x="16" y="516" width="92" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="XR2-zN-DFl" firstAttribute="leading" secondItem="c2z-bl-1Rg" secondAttribute="trailing" constant="12" id="0ZL-pe-RP7"/>
+                            <constraint firstItem="8Yk-Yv-vFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0bO-Cp-duh"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1FU-i4-jUx"/>
                             <constraint firstItem="5xY-RH-8fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2k2-gK-WTJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eb2-Dx-3pe" secondAttribute="trailing" constant="212" id="69j-to-B4z"/>
                             <constraint firstItem="AoE-7k-csQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9gs-YJ-iVE"/>
+                            <constraint firstItem="8Yk-Yv-vFZ" firstAttribute="top" secondItem="f5a-DE-O0k" secondAttribute="bottom" constant="25" id="BbS-2m-aeW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eb2-Dx-3pe" secondAttribute="bottom" constant="30" id="BuL-KT-SSP"/>
                             <constraint firstItem="5xY-RH-8fa" firstAttribute="top" secondItem="izT-E4-ved" secondAttribute="bottom" constant="17" id="F8U-gK-2LP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XR2-zN-DFl" secondAttribute="bottom" constant="106" id="HtH-CA-vFp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f5a-DE-O0k" secondAttribute="bottom" constant="106" id="IVW-Nc-LMS"/>
@@ -104,14 +120,17 @@
                             <constraint firstItem="VoD-iO-urR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFC-Eu-7Gm"/>
                             <constraint firstItem="c2z-bl-1Rg" firstAttribute="leading" secondItem="f5a-DE-O0k" secondAttribute="trailing" constant="11" id="c7K-YD-WSr"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="eSV-n1-zHt"/>
+                            <constraint firstItem="eb2-Dx-3pe" firstAttribute="top" secondItem="8Yk-Yv-vFZ" secondAttribute="bottom" constant="7" id="eTg-nG-nz0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9X-Q9-uaY" secondAttribute="trailing" constant="16" id="edk-z3-4Hf"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XR2-zN-DFl" secondAttribute="trailing" constant="4" id="p6u-TJ-A01"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c2z-bl-1Rg" secondAttribute="bottom" constant="105" id="q9M-TE-7QT"/>
                             <constraint firstItem="H9X-Q9-uaY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="r7B-WJ-BSO"/>
                             <constraint firstItem="XR2-zN-DFl" firstAttribute="top" secondItem="VoD-iO-urR" secondAttribute="bottom" constant="45.5" id="ri1-63-Hn3"/>
                             <constraint firstItem="H9X-Q9-uaY" firstAttribute="top" secondItem="AoE-7k-csQ" secondAttribute="bottom" constant="5" id="wHV-VO-iKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Yk-Yv-vFZ" secondAttribute="trailing" constant="212" id="wzr-Gl-d6d"/>
                             <constraint firstItem="c2z-bl-1Rg" firstAttribute="top" secondItem="VoD-iO-urR" secondAttribute="bottom" constant="44.5" id="xPs-eo-VPH"/>
                             <constraint firstItem="f5a-DE-O0k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="5" id="xct-WL-Luu"/>
+                            <constraint firstItem="eb2-Dx-3pe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="xeU-Gi-vur"/>
                         </constraints>
                     </view>
                     <connections>
