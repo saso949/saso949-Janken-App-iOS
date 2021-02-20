@@ -37,10 +37,20 @@ class ViewController: UIViewController {
             count1 = winSwitch
         }
         
+        if let lostSwitch = userDefaults.string(forKey: "lostSwitch"){
+            count2 = lostSwitch
+        }
+        
         if count1 == "on" {
             winLabel.isHidden = false
         }else if count1 == "off"{
             winLabel.isHidden = true
+        }else if count2 == "on"{
+            lostLabel.isHidden = false
+        }else if count2 = "off"{
+            lostLabel.isHidden = true
+        }else if count1 == "off" && count2 == "off"{
+            
         }
         
         
@@ -52,6 +62,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var winLabel: UILabel!
     @IBOutlet weak var lostLabel: UILabel!
     @IBOutlet weak var slider: UISlider!
+    @IBOutlet weak var resetButton: UIButton!
     
     
     var b = 0
