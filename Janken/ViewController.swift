@@ -68,6 +68,8 @@ class ViewController: UIViewController {
                 
                 lostCount += 1
                 lostLabel.text = "負けた回数" + String(lostCount) + "回"
+                userDefaults.set(lostCount, forKey: "lost")
+                userDefaults.synchronize()
             }
         }
     }
@@ -97,6 +99,9 @@ class ViewController: UIViewController {
                 
                 lostCount += 1
                 lostLabel.text = "負けた回数" + String(lostCount) + "回"
+                userDefaults.set(lostCount, forKey: "lost")
+                userDefaults.synchronize()
+
             }
         }
         
@@ -127,6 +132,9 @@ class ViewController: UIViewController {
                 
                 lostCount += 1
                 lostLabel.text = "負けた回数" + String(lostCount) + "回"
+                userDefaults.set(lostCount, forKey: "lost")
+                userDefaults.synchronize()
+
             }
         }
     }
