@@ -17,10 +17,16 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var percentLabel: UILabel!
     
+    var b = 0
+    
+    
+    
+    
 
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
         percentLabel.text = String(sliderValue) + "%"
+        b = sliderValue
     }
     
     
