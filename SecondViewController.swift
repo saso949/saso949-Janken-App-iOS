@@ -29,8 +29,7 @@ class SecondViewController: UIViewController {
     
     
     @IBAction func goMain(_ sender: Any) {
-        
-        
+        self.performSegue(withIdentifier: "toMain", sender: self)
     }
     
     /*
