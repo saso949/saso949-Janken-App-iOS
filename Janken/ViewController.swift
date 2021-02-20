@@ -47,13 +47,17 @@ class ViewController: UIViewController {
         }else if count1 == "off"{
             winLabel.isHidden = true
             resetButton.isHidden = false
-        }else if count2 == "on"{
+        }
+        
+        if count2 == "on"{
             lostLabel.isHidden = false
             resetButton.isHidden = false
         }else if count2 == "off"{
             lostLabel.isHidden = true
             resetButton.isHidden = false
-        }else if count1 == "off" && count2 == "off"{
+        }
+        
+        if count1 == "off" && count2 == "off"{
             resetButton.isHidden = true
         }
         

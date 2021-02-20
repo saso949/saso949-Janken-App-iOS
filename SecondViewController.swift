@@ -31,8 +31,10 @@ class SecondViewController: UIViewController {
     @IBAction func lostSwitch(_ sender: UISwitch) {
         if sender.isOn{
             userDefaults.set("on", forKey: "lostSwitch")
+            userDefaults.synchronize()
         }else{
             userDefaults.set("off",forKey: "lostSwitch")
+            userDefaults.synchronize()
         }
     }
     
