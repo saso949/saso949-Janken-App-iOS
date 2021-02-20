@@ -25,6 +25,15 @@ class ViewController: UIViewController {
             lostCount = userDefaults.integer(forKey: "lost")
         }
         
+        if let _ = userDefaults.string(forKey: "slider"){
+            slider.value = userDefaults.float(forKey: "slider")
+            
+            let sliInt = userDefaults.integer(forKey: "slider")
+            percentLabel.text =  String(sliInt) + "%"
+            b = sliInt
+        }
+        
+        
     }
     
     @IBOutlet weak var percentLabel: UILabel!
@@ -32,6 +41,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyLabel: UILabel!
     @IBOutlet weak var winLabel: UILabel!
     @IBOutlet weak var lostLabel: UILabel!
+    @IBOutlet weak var slider: UISlider!
     
     
     var b = 0
@@ -43,6 +53,9 @@ class ViewController: UIViewController {
         let sliderValue = Int(sender.value)
         percentLabel.text = String(sliderValue) + "%"
         b = sliderValue
+        
+        userDefaults.set(b, forKey: "slider")
+        userDefaults.synchronize()
     }
     
     

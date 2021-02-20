@@ -138,6 +138,7 @@
                         <outlet property="lostLabel" destination="eb2-Dx-3pe" id="G1m-Hx-ip2"/>
                         <outlet property="percentLabel" destination="AoE-7k-csQ" id="9Br-Rt-dcX"/>
                         <outlet property="resultLabel" destination="VoD-iO-urR" id="kLz-aC-Nch"/>
+                        <outlet property="slider" destination="H9X-Q9-uaY" id="Mb1-LM-mPg"/>
                         <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="8uf-rY-xit"/>
                     </connections>
                 </viewController>
