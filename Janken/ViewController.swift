@@ -23,6 +23,8 @@ class ViewController: UIViewController {
     
     
     var b = 0
+    var winCount = 0
+    var lostCount = 0
 
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
