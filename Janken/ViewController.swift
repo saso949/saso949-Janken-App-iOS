@@ -20,10 +20,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var enemyLabel: UILabel!
     
     var b = 0
-    
-    
-    
-    
 
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
@@ -33,7 +29,23 @@ class ViewController: UIViewController {
     
     
     @IBAction func guButton(_ sender: Any) {
-        var a = Int.random(in: 0 ... 100)
+        let a = Int.random(in: 0 ... 100)
+        if a <= b{
+            resultLabel.text = "勝ち"
+            enemyLabel.text = "チョキ"
+            
+        }else if a >= b {
+            let c = 100 - b
+            let d = c / 2
+            let e = Int.random(in: 0 ... c)
+            if e >= d{
+                resultLabel.text = "アイコ"
+                enemyLabel.text = "グー"
+            }else if e <= d{
+                resultLabel.text = "負け"
+                enemyLabel.text = "パー"
+            }
+        }
     }
     
 
