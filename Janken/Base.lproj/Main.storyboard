@@ -164,22 +164,22 @@
                     </view>
                     <connections>
                         <outlet property="enemyLabel" destination="5xY-RH-8fa" id="DDi-nd-Iko"/>
-                        <outlet property="lostLabel" destination="eb2-Dx-3pe" id="G1m-Hx-ip2"/>
+                        <outlet property="lostLabel" destination="eb2-Dx-3pe" id="Ifb-sb-3TQ"/>
                         <outlet property="percentLabel" destination="AoE-7k-csQ" id="9Br-Rt-dcX"/>
-                        <outlet property="resultLabel" destination="VoD-iO-urR" id="kLz-aC-Nch"/>
+                        <outlet property="resultLabel" destination="VoD-iO-urR" id="VAR-gk-Oj7"/>
                         <outlet property="slider" destination="H9X-Q9-uaY" id="Mb1-LM-mPg"/>
-                        <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="8uf-rY-xit"/>
-                        <segue destination="Cgx-lx-uxu" kind="show" identifier="toSecond" id="SXH-q9-8gk"/>
+                        <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="aZe-8n-sk4"/>
+                        <segue destination="Cgx-lx-uxu" kind="show" identifier="toSecond" animates="NO" id="SXH-q9-8gk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="77.112676056338032"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="8UI-45-Qne">
             <objects>
-                <viewController id="Cgx-lx-uxu" customClass="ViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cgx-lx-uxu" customClass="SecondViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxF-ks-3Vs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -196,7 +196,7 @@
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-6k-0Ic">
                                         <rect key="frame" x="266" y="0.0" width="51" height="31"/>
                                         <connections>
-                                            <action selector="winSwitch:" destination="Cgx-lx-uxu" eventType="valueChanged" id="XsT-lN-RBz"/>
+                                            <action selector="winSwitch:" destination="Cgx-lx-uxu" eventType="valueChanged" id="dld-U1-BFg"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -231,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdF-jY-QFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1087.5" y="105.63380281690141"/>
+            <point key="canvasLocation" x="1174" y="77"/>
         </scene>
     </scenes>
     <resources>

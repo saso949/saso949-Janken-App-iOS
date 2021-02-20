@@ -12,7 +12,6 @@ class ViewController: UIViewController {
     let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
-        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         if let win = userDefaults.string(forKey: "win") {
@@ -191,21 +190,6 @@ class ViewController: UIViewController {
     }
     
     
-    
-    @IBAction func winSwitch(_ sender: UISwitch) {
-        if sender.isOn{
-            userDefaults.set("on", forKey: "winSwitch")
-            userDefaults.synchronize()
-            
-            winLabel.isHidden = true
-            
-        }else {
-            userDefaults.set("off", forKey: "winSwitch")
-            userDefaults.synchronize()
-            
-            winLabel.isHidden = false
-        }
-    }
     
     
     
