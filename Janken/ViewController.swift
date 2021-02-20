@@ -157,6 +157,22 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func resetButton(_ sender: Any) {
+        lostLabel.text = "負けた回数0回"
+        winLabel.text = "勝った回数0回"
+        
+        winCount = 0
+        userDefaults.set(winCount, forKey: "win")
+        userDefaults.synchronize()
+        
+        
+        lostCount = 0
+        userDefaults.set(lostCount, forKey: "lost")
+        userDefaults.synchronize()
+    }
+    
+    
+    
     
     
     
