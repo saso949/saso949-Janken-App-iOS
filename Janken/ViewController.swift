@@ -38,6 +38,7 @@ class ViewController: UIViewController {
             let c = 100 - b
             let d = c / 2
             let e = Int.random(in: 0 ... c)
+            
             if e >= d{
                 resultLabel.text = "アイコ"
                 enemyLabel.text = "グー"
@@ -50,7 +51,24 @@ class ViewController: UIViewController {
     
 
     @IBAction func chokiButton(_ sender: Any) {
-        var a = Int.random(in: 0 ... 100)
+        let a = Int.random(in: 0 ... 100)
+        if a <= b{
+            resultLabel.text = "勝ち"
+            enemyLabel.text = "パー"
+            
+        }else if a >= b {
+            let c = 100 - b
+            let d = c / 2
+            let e = Int.random(in: 0 ... c)
+            if e >= d{
+                resultLabel.text = "アイコ"
+                enemyLabel.text = "チョキ"
+            } else if e <= d {
+                resultLabel.text = "負け"
+                enemyLabel.text = "グー"
+            }
+        }
+        
     }
     
     @IBAction func paButton(_ sender: Any) {
