@@ -20,7 +20,10 @@ class ViewController: UIViewController {
             winCount = userDefaults.integer(forKey: "win")
         }
         
-        
+        if let lost = userDefaults.string(forKey: "lost"){
+            lostLabel.text = "負けた回数" + lost + "回"
+            lostCount = userDefaults.integer(forKey: "lost")
+        }
         
     }
     
