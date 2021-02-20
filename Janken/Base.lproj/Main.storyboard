@@ -98,6 +98,13 @@
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ibb-VC-sYa">
+                                <rect key="frame" x="196" y="497" width="92" height="31"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <state key="normal" title="リセット">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -108,17 +115,21 @@
                             <constraint firstItem="5xY-RH-8fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2k2-gK-WTJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eb2-Dx-3pe" secondAttribute="trailing" constant="212" id="69j-to-B4z"/>
                             <constraint firstItem="AoE-7k-csQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9gs-YJ-iVE"/>
+                            <constraint firstItem="Ibb-VC-sYa" firstAttribute="top" secondItem="c2z-bl-1Rg" secondAttribute="bottom" constant="34" id="AEg-BH-Aug"/>
                             <constraint firstItem="8Yk-Yv-vFZ" firstAttribute="top" secondItem="f5a-DE-O0k" secondAttribute="bottom" constant="25" id="BbS-2m-aeW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eb2-Dx-3pe" secondAttribute="bottom" constant="30" id="BuL-KT-SSP"/>
+                            <constraint firstItem="Ibb-VC-sYa" firstAttribute="leading" secondItem="8Yk-Yv-vFZ" secondAttribute="trailing" constant="88" id="Cbe-8W-z6e"/>
                             <constraint firstItem="5xY-RH-8fa" firstAttribute="top" secondItem="izT-E4-ved" secondAttribute="bottom" constant="17" id="F8U-gK-2LP"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XR2-zN-DFl" secondAttribute="bottom" constant="106" id="HtH-CA-vFp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f5a-DE-O0k" secondAttribute="bottom" constant="106" id="IVW-Nc-LMS"/>
                             <constraint firstItem="izT-E4-ved" firstAttribute="top" secondItem="H9X-Q9-uaY" secondAttribute="bottom" constant="13" id="IfG-bb-98e"/>
                             <constraint firstItem="izT-E4-ved" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pk5-gX-u9R"/>
                             <constraint firstItem="AoE-7k-csQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qoc-P3-2V5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ibb-VC-sYa" secondAttribute="trailing" constant="32" id="S8R-d4-dke"/>
                             <constraint firstItem="f5a-DE-O0k" firstAttribute="top" secondItem="VoD-iO-urR" secondAttribute="bottom" constant="45.5" id="XP4-fd-zXz"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFC-Eu-7Gm"/>
                             <constraint firstItem="c2z-bl-1Rg" firstAttribute="leading" secondItem="f5a-DE-O0k" secondAttribute="trailing" constant="11" id="c7K-YD-WSr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ibb-VC-sYa" secondAttribute="bottom" constant="40" id="chF-fj-u8J"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="eSV-n1-zHt"/>
                             <constraint firstItem="eb2-Dx-3pe" firstAttribute="top" secondItem="8Yk-Yv-vFZ" secondAttribute="bottom" constant="7" id="eTg-nG-nz0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H9X-Q9-uaY" secondAttribute="trailing" constant="16" id="edk-z3-4Hf"/>
@@ -153,6 +164,9 @@
         <image name="janken_pa" width="474" height="436"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
