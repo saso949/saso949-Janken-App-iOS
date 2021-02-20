@@ -174,6 +174,13 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func settingButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toSecond", sender: self)
+    }
+    
+    
+    
+    
     
     
     

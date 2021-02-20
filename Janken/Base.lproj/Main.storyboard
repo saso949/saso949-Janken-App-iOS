@@ -108,6 +108,17 @@
                                     <action selector="resetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wls-I1-sro"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQT-Z5-Krc">
+                                <rect key="frame" x="275" y="22" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="6Zd-vd-MeZ"/>
+                                    <constraint firstAttribute="height" constant="22" id="ZTO-xp-94f"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="setting"/>
+                                <connections>
+                                    <action selector="settingButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W1C-U4-acQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -116,6 +127,7 @@
                             <constraint firstItem="8Yk-Yv-vFZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0bO-Cp-duh"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1FU-i4-jUx"/>
                             <constraint firstItem="5xY-RH-8fa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2k2-gK-WTJ"/>
+                            <constraint firstItem="JQT-Z5-Krc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="3p6-py-GXH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eb2-Dx-3pe" secondAttribute="trailing" constant="212" id="69j-to-B4z"/>
                             <constraint firstItem="AoE-7k-csQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="9gs-YJ-iVE"/>
                             <constraint firstItem="Ibb-VC-sYa" firstAttribute="top" secondItem="c2z-bl-1Rg" secondAttribute="bottom" constant="34" id="AEg-BH-Aug"/>
@@ -126,9 +138,12 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="XR2-zN-DFl" secondAttribute="bottom" constant="106" id="HtH-CA-vFp"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="f5a-DE-O0k" secondAttribute="bottom" constant="106" id="IVW-Nc-LMS"/>
                             <constraint firstItem="izT-E4-ved" firstAttribute="top" secondItem="H9X-Q9-uaY" secondAttribute="bottom" constant="13" id="IfG-bb-98e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JQT-Z5-Krc" secondAttribute="trailing" constant="23" id="MbS-Rr-9Yw"/>
                             <constraint firstItem="izT-E4-ved" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pk5-gX-u9R"/>
                             <constraint firstItem="AoE-7k-csQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qoc-P3-2V5"/>
+                            <constraint firstItem="JQT-Z5-Krc" firstAttribute="leading" secondItem="AoE-7k-csQ" secondAttribute="trailing" constant="102" id="Rv6-W7-qdq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ibb-VC-sYa" secondAttribute="trailing" constant="32" id="S8R-d4-dke"/>
+                            <constraint firstItem="H9X-Q9-uaY" firstAttribute="top" secondItem="JQT-Z5-Krc" secondAttribute="bottom" constant="2" id="VCS-s4-geK"/>
                             <constraint firstItem="f5a-DE-O0k" firstAttribute="top" secondItem="VoD-iO-urR" secondAttribute="bottom" constant="45.5" id="XP4-fd-zXz"/>
                             <constraint firstItem="VoD-iO-urR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFC-Eu-7Gm"/>
                             <constraint firstItem="c2z-bl-1Rg" firstAttribute="leading" secondItem="f5a-DE-O0k" secondAttribute="trailing" constant="11" id="c7K-YD-WSr"/>
@@ -154,17 +169,35 @@
                         <outlet property="resultLabel" destination="VoD-iO-urR" id="kLz-aC-Nch"/>
                         <outlet property="slider" destination="H9X-Q9-uaY" id="Mb1-LM-mPg"/>
                         <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="8uf-rY-xit"/>
+                        <segue destination="Cgx-lx-uxu" kind="show" identifier="toSecond" id="SXH-q9-8gk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138.75" y="77.112676056338032"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="8UI-45-Qne">
+            <objects>
+                <viewController id="Cgx-lx-uxu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cxF-ks-3Vs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wzg-bs-Bne"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7uc-E4-fZh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdF-jY-QFP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1088" y="106"/>
+        </scene>
     </scenes>
     <resources>
         <image name="janken_choki" width="422" height="461"/>
         <image name="janken_gu" width="416" height="416"/>
         <image name="janken_pa" width="474" height="436"/>
+        <image name="setting" width="400" height="400"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
