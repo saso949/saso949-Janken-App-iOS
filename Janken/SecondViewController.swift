@@ -18,7 +18,9 @@ class SecondViewController: UIViewController {
             count1 = winSwitch
         }
         
-        
+        if count1 == "on"{
+            
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -26,6 +28,9 @@ class SecondViewController: UIViewController {
     var count1 = "off"
     var count2 = "off"
     
+    
+    @IBOutlet weak var winSwitch: UISwitch!
+    @IBOutlet weak var lostSwitch: UISwitch!
     
     
     
