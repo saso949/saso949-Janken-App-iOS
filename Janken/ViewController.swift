@@ -186,17 +186,24 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func settingButton(_ sender: Any) {
+    @IBAction func settingButton(_ sender: UIButton) {
         self.performSegue(withIdentifier: "toSecond", sender: self)
     }
+    
+    
     
     @IBAction func winSwitch(_ sender: UISwitch) {
         if sender.isOn{
             userDefaults.set("on", forKey: "winSwitch")
             userDefaults.synchronize()
+            
+            winLabel.isHidden = true
+            
         }else {
             userDefaults.set("off", forKey: "winSwitch")
             userDefaults.synchronize()
+            
+            winLabel.isHidden = false
         }
     }
     
