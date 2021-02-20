@@ -204,6 +204,9 @@
                                 <state key="normal" title="保存して終了">
                                     <color key="titleColor" systemColor="labelColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="goMain:" destination="Cgx-lx-uxu" eventType="touchUpInside" id="V1a-Lc-Qrw"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ikH-6o-jpb">
                                 <rect key="frame" x="5" y="30" width="315" height="31"/>

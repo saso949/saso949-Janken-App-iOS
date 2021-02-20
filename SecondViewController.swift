@@ -24,10 +24,15 @@ class SecondViewController: UIViewController {
     }else {
         userDefaults.set("off", forKey: "winSwitch")
         userDefaults.synchronize()
-        self.performSegue(withIdentifier: "toMain", sender: self)
     }
     }
-
+    
+    
+    @IBAction func goMain(_ sender: Any) {
+        
+        
+    }
+    
     /*
     // MARK: - Navigation
 
