@@ -115,7 +115,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="enemyLabel" destination="5xY-RH-8fa" id="DDi-nd-Iko"/>
                         <outlet property="percentLabel" destination="AoE-7k-csQ" id="9Br-Rt-dcX"/>
+                        <outlet property="resultLabel" destination="VoD-iO-urR" id="kLz-aC-Nch"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
