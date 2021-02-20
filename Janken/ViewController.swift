@@ -30,5 +30,24 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func guButton(_ sender: Any) {
+        var a = Int.random(in: 0 ... 100)
+    }
+    
+
+    @IBAction func chokiButton(_ sender: Any) {
+        var a = Int.random(in: 0 ... 100)
+    }
+    
+    @IBAction func paButton(_ sender: Any) {
+        var a = Int.random(in: 0 ... 100)
+    }
+    
+    
+    
+    
+    
+    
+    
 }
 

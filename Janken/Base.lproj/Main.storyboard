@@ -54,6 +54,9 @@
                                     <constraint firstAttribute="width" secondItem="f5a-DE-O0k" secondAttribute="height" multiplier="98:87" id="Kmz-Df-pIN"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="janken_gu"/>
+                                <connections>
+                                    <action selector="guButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="714-5x-kNf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="98" placeholderIntrinsicHeight="87" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XR2-zN-DFl">
                                 <rect key="frame" x="218" y="375" width="98" height="87"/>
@@ -63,6 +66,9 @@
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="8" leading="8" bottom="8" trailing="8"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Button" image="janken_pa"/>
+                                <connections>
+                                    <action selector="paButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9nM-gn-cqI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AoE-7k-csQ">
                                 <rect key="frame" x="147" y="20" width="26" height="21"/>
@@ -76,6 +82,9 @@
                                     <constraint firstAttribute="width" secondItem="c2z-bl-1Rg" secondAttribute="height" multiplier="92:89" id="ZnB-wn-Ppr"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="janken_choki"/>
+                                <connections>
+                                    <action selector="chokiButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7n8-OA-8x4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
