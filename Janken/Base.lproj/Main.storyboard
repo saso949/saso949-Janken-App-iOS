@@ -246,6 +246,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="7uc-E4-fZh"/>
                     <connections>
+                        <outlet property="lostSwitch" destination="LuP-VO-EpY" id="ArD-rM-6O2"/>
+                        <outlet property="winSwitch" destination="Ah7-6k-0Ic" id="Ztk-kQ-owa"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="toMain" modalPresentationStyle="currentContext" id="H5L-xO-i32"/>
                     </connections>
                 </viewController>

@@ -19,7 +19,9 @@ class SecondViewController: UIViewController {
         }
         
         if count1 == "on"{
-            
+            winSwitch.isOn = true
+        }else if count1 == "off"{
+            winSwitch.isOn = false
         }
 
         // Do any additional setup after loading the view.
