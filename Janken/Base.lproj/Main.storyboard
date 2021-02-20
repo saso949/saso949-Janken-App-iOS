@@ -166,6 +166,7 @@
                         <outlet property="enemyLabel" destination="5xY-RH-8fa" id="DDi-nd-Iko"/>
                         <outlet property="lostLabel" destination="eb2-Dx-3pe" id="Ifb-sb-3TQ"/>
                         <outlet property="percentLabel" destination="AoE-7k-csQ" id="9Br-Rt-dcX"/>
+                        <outlet property="resetButton" destination="Ibb-VC-sYa" id="JIC-SW-wuY"/>
                         <outlet property="resultLabel" destination="VoD-iO-urR" id="VAR-gk-Oj7"/>
                         <outlet property="slider" destination="H9X-Q9-uaY" id="Mb1-LM-mPg"/>
                         <outlet property="winLabel" destination="8Yk-Yv-vFZ" id="aZe-8n-sk4"/>
