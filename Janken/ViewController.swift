@@ -9,14 +9,20 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
     }
+    
+    @IBOutlet weak var percentLabel: UILabel!
+    
+
+    @IBAction func slider(_ sender: UISlider) {
+        let sliderValue = Int(sender.value)
+        percentLabel.text = String(sliderValue) + "%"
+    }
+    
+    
 }
 
