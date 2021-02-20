@@ -8,10 +8,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // UserDefaultsの参照
+    let userDefaults = UserDefaults.standard
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        if let win = userDefaults.string(forKey: "win") {
+            winLabel.text = "勝った回数" + win + "回"
+            winCount = userDefaults.integer(forKey: "win")
+        }
+        
+        
         
     }
     
@@ -26,8 +35,6 @@ class ViewController: UIViewController {
     var winCount = 0
     var lostCount = 0
     
-    // UserDefaultsの参照
-    let userDefaults = UserDefaults.standard
 
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
