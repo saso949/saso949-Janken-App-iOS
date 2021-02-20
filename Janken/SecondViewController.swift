@@ -13,9 +13,22 @@ class SecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let winSwitch = userDefaults.string(forKey: "winSwitch"){
+            count1 = winSwitch
+        }
+        
+        
 
         // Do any additional setup after loading the view.
     }
+    
+    var count1 = "off"
+    var count2 = "off"
+    
+    
+    
+    
     @IBAction func winSwitch(_ sender: UISwitch) {
     if sender.isOn{
         userDefaults.set("on", forKey: "winSwitch")
@@ -24,6 +37,7 @@ class SecondViewController: UIViewController {
     }else {
         userDefaults.set("off", forKey: "winSwitch")
         userDefaults.synchronize()
+        
     }
     }
     

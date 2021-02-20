@@ -81,7 +81,6 @@
 		C5E7AF4B25E0908A006216C4 = {
 			isa = PBXGroup;
 			children = (
-				C5BAD95B25E1109C0015980F /* SecondViewController.swift */,
 				C5E7AF5625E0908A006216C4 /* Janken */,
 				C5E7AF6D25E0908F006216C4 /* JankenTests */,
 				C5E7AF7825E0908F006216C4 /* JankenUITests */,
@@ -106,6 +105,7 @@
 				C5E7AF5925E0908A006216C4 /* SceneDelegate.swift */,
 				C5E7AF5B25E0908A006216C4 /* ViewController.swift */,
 				C5E7AF5D25E0908A006216C4 /* Main.storyboard */,
+				C5BAD95B25E1109C0015980F /* SecondViewController.swift */,
 				C5E7AF6025E0908F006216C4 /* Assets.xcassets */,
 				C5E7AF6225E0908F006216C4 /* LaunchScreen.storyboard */,
 				C5E7AF6525E0908F006216C4 /* Info.plist */,
