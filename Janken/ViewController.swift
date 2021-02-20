@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     var b = 0
     var winCount = 0
     var lostCount = 0
+    
+    // UserDefaultsの参照
+    let userDefaults = UserDefaults.standard
 
     @IBAction func slider(_ sender: UISlider) {
         let sliderValue = Int(sender.value)
@@ -41,6 +44,8 @@ class ViewController: UIViewController {
             
             winCount += 1
             winLabel.text = "勝った回数" + String(winCount) + "回"
+            userDefaults.set(winCount, forKey: "win")
+            userDefaults.synchronize()
             
         }else if a >= b {
             let c = 100 - b
@@ -69,6 +74,8 @@ class ViewController: UIViewController {
             
             winCount += 1
             winLabel.text = "勝った回数" + String(winCount) + "回"
+            userDefaults.set(winCount, forKey: "win")
+            userDefaults.synchronize()
             
         }else if a >= b {
             let c = 100 - b
@@ -97,6 +104,8 @@ class ViewController: UIViewController {
             
             winCount += 1
             winLabel.text = "勝った回数" + String(winCount) + "回"
+            userDefaults.set(winCount, forKey: "win")
+            userDefaults.synchronize()
             
         }else if a >= b {
             let c = 100 - b
