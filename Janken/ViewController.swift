@@ -33,6 +33,16 @@ class ViewController: UIViewController {
             b = sliInt
         }
         
+        if let winSwitch = userDefaults.string(forKey: "winSwitch"){
+            count1 = winSwitch
+        }
+        
+        if count1 == "on" {
+            winLabel.isHidden = false
+        }else if count1 == "off"{
+            winLabel.isHidden = true
+        }
+        
         
     }
     
@@ -47,6 +57,8 @@ class ViewController: UIViewController {
     var b = 0
     var winCount = 0
     var lostCount = 0
+    var count1 = "off"
+    var count2 = "off"
     
 
     @IBAction func slider(_ sender: UISlider) {
@@ -178,7 +190,15 @@ class ViewController: UIViewController {
         self.performSegue(withIdentifier: "toSecond", sender: self)
     }
     
-    
+    @IBAction func winSwitch(_ sender: UISwitch) {
+        if sender.isOn{
+            userDefaults.set("on", forKey: "winSwitch")
+            userDefaults.synchronize()
+        }else {
+            userDefaults.set("off", forKey: "winSwitch")
+            userDefaults.synchronize()
+        }
+    }
     
     
     

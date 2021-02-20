@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="138.75" y="77.112676056338032"/>
         </scene>
-        <!--Second View Controller-->
+        <!--View Controller-->
         <scene sceneID="8UI-45-Qne">
             <objects>
-                <viewController id="Cgx-lx-uxu" customClass="SecondViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Cgx-lx-uxu" customClass="ViewController" customModule="Janken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cxF-ks-3Vs">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,6 +195,9 @@
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Ah7-6k-0Ic">
                                         <rect key="frame" x="266" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="winSwitch:" destination="Cgx-lx-uxu" eventType="valueChanged" id="YyY-GG-BUH"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
