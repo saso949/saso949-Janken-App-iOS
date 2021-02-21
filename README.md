@@ -9,8 +9,8 @@
 
 # Requirement
 
-* kotlin 1.3.72
-* Androi API21~30
+* XCode 12.4
+* iOS 14
 
 # Usage
 
